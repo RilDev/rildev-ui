@@ -78,7 +78,7 @@ function App() {
           <img src={LinkedInSVG} alt={''} />
         </a>
       </div>
-      <h1 className={`title`}>Welcome to RilDev</h1>
+      <h1 className={`title`}>Welcome to RilDev's</h1>
       <div className={`site-under-construction`}>
         Site Under Construction...
       </div>
