@@ -2,7 +2,7 @@
 
 *This is the UI code for my developer website*
 
-Website URL: [rildev.website](https://rildev.website)
+Website URL: [https://rildev.website](https://rildev.website)
 
 ## Portfolio
 
