@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import generateHash from 'random-hash';
 import GitHubSVG from './assets/github.svg';
 import LinkedInSVG from './assets/linkedin.svg';
 import MinimalCSS from './assets/minimal-css-cropped.png';
@@ -22,9 +23,10 @@ const AppWrapper = styled.div`
   .photo {
     border-radius: 50%;
     overflow: hidden;
-    max-width: 160px;
-    max-height: 160px;
+    width: 160px;
+    height: 160px;
     box-shadow: 1px 1px 4px #111111;
+    cursor: pointer;
 
     img {
       width: 100%;
@@ -100,11 +102,25 @@ const AppWrapper = styled.div`
 `;
 
 function App() {
+  const [userPicture, setUserPicture] = useState();
+
+  const generateRandomPicture = async () => {
+    const generatedHash = generateHash();
+
+    const picture = `https://avatars.dicebear.com/api/male/${generatedHash}.svg?mood[]=happy`;
+
+    setUserPicture(picture);
+  };
+
   return (
     <AppWrapper>
-      <div className={`photo`}>
+      <div className={`photo`} onClick={() => generateRandomPicture()}>
         <img
-          src={`https://avatars2.githubusercontent.com/u/13135150?v=4`}
+          src={
+            userPicture
+              ? userPicture
+              : `https://avatars2.githubusercontent.com/u/13135150?v=4`
+          }
           alt={``}
         />
       </div>
