@@ -59,7 +59,7 @@ const AppWrapper = styled.div`
 
   .portfolio {
     .item {
-    margin-top: 2rem;
+      margin-top: 2rem;
       line-height: 1.5;
 
       .left {
@@ -76,6 +76,7 @@ const AppWrapper = styled.div`
         height: 360px;
         margin-bottom: 2rem;
         display: block;
+        box-shadow: 1px 1px 4px #111111;
 
         img {
           width: 100%;
