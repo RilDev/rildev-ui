@@ -9,14 +9,19 @@ const AppWrapper = styled.div`
   align-items: center;
   justify-content: center;
   height: 100%;
-  padding: 0 20px;
+  padding: 4rem 20px;
   text-align: center;
+  font-family: 'Roboto Mono', monospace;
+
+  h2 {
+    margin-bottom: 2rem;
+  }
 
   .photo {
     border-radius: 50%;
     overflow: hidden;
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 160px;
+    max-height: 160px;
     box-shadow: 1px 1px 4px #111111;
 
     img {
@@ -41,7 +46,6 @@ const AppWrapper = styled.div`
   }
 
   .title {
-    font-family: 'Roboto Mono', monospace;
     font-weight: bold;
   }
 
@@ -49,6 +53,35 @@ const AppWrapper = styled.div`
     font-family: monospace;
     font-size: 20px;
     animation: blink 1s infinite;
+  }
+
+  .portfolio {
+    .item {
+      line-height: 1.5;
+
+      .left {
+        text-align: left;
+      }
+
+      .title {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+
+      .image {
+        overflow: hidden;
+        height: 150px;
+        margin-bottom: 1rem;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .description {
+      }
+    }
   }
 
   @keyframes blink {
@@ -79,9 +112,42 @@ function App() {
         </a>
       </div>
       <h1 className={`title`}>Welcome to RilDev's</h1>
-      <div className={`site-under-construction`}>
-        Site Under Construction...
+      <h2 className={`title`}>Portfolio</h2>
+      <div className={`portfolio`}>
+        <div className={`item`}>
+          <div className={`title left`}>Minimal CSS</div>
+          <div className={`image`}>
+            <img src={`https://via.placeholder.com/400`} alt={``} />
+          </div>
+          <div className={`description`}>
+            <em>
+              Make your prototypes look good with a standard minimal css
+              stylesheet!
+            </em>
+            <div className={`left`}>
+              Website URL:{' '}
+              <a
+                href={`https://rildev.github.io/minimal-css/`}
+                target={`_blank`}
+              >
+                https://rildev.github.io/minimal-css/
+              </a>
+            </div>
+            <div className={`left`}>
+              GitHub:{' '}
+              <a
+                href={`https://github.com/RilDev/minimal-css`}
+                target={`_blank`}
+              >
+                https://github.com/RilDev/minimal-css
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
+      {/* <div className={`site-under-construction`}> */}
+      {/*   Site Under Construction... */}
+      {/* </div> */}
     </AppWrapper>
   );
 }
