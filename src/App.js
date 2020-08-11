@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import generateHash from 'random-hash';
 import GitHubSVG from './assets/github.svg';
 import LinkedInSVG from './assets/linkedin.svg';
+import ResumeSVG from './assets/resume.svg';
+import ResumePDF from './assets/resume.pdf';
 import MinimalCSS from './assets/minimal-css-cropped.png';
 import styled from 'styled-components';
 
@@ -136,6 +138,9 @@ function App() {
         </a>
         <a href={`https://www.linkedin.com/in/acyril/`} target={`_blank`}>
           <img src={LinkedInSVG} alt={''} />
+        </a>
+        <a href={ResumePDF} target={`_blank`}>
+          <img src={ResumeSVG} alt={''} />
         </a>
       </div>
       <h1 className={`title`}>Welcome to RilDev's</h1>
