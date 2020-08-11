@@ -73,6 +73,12 @@ const AppWrapper = styled.div`
         margin-bottom: 1rem;
       }
 
+      .subtitle {
+        font-style: italic;
+        margin-bottom: 1rem;
+        color: #2f4f4f;
+      }
+
       .image {
         overflow: hidden;
         height: 360px;
@@ -145,10 +151,10 @@ function App() {
             <img src={MinimalCSS} alt={``} />
           </a>
           <div className={`description`}>
-            <em>
+            <div className={`subtitle`}>
               Make your prototypes look good with a standard minimal css
               stylesheet!
-            </em>
+            </div>
             <div className={`left`}>
               Website URL:{' '}
               <a
