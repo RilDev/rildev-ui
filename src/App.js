@@ -1,6 +1,7 @@
 import React from 'react';
 import GitHubSVG from './assets/github.svg';
 import LinkedInSVG from './assets/linkedin.svg';
+import MinimalCSS from './assets/minimal-css-cropped.png';
 import styled from 'styled-components';
 
 const AppWrapper = styled.div`
@@ -8,10 +9,11 @@ const AppWrapper = styled.div`
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
   padding: 4rem 20px;
   text-align: center;
   font-family: 'Roboto Mono', monospace;
+  max-width: 43rem;
+  margin: auto;
 
   h2 {
     margin-bottom: 2rem;
@@ -57,6 +59,7 @@ const AppWrapper = styled.div`
 
   .portfolio {
     .item {
+    margin-top: 2rem;
       line-height: 1.5;
 
       .left {
@@ -70,8 +73,9 @@ const AppWrapper = styled.div`
 
       .image {
         overflow: hidden;
-        height: 150px;
-        margin-bottom: 1rem;
+        height: 360px;
+        margin-bottom: 2rem;
+        display: block;
 
         img {
           width: 100%;
@@ -116,9 +120,13 @@ function App() {
       <div className={`portfolio`}>
         <div className={`item`}>
           <div className={`title left`}>Minimal CSS</div>
-          <div className={`image`}>
-            <img src={`https://via.placeholder.com/400`} alt={``} />
-          </div>
+          <a
+            href={`https://rildev.github.io/minimal-css/`}
+            target={`_blank`}
+            className={`image`}
+          >
+            <img src={MinimalCSS} alt={``} />
+          </a>
           <div className={`description`}>
             <em>
               Make your prototypes look good with a standard minimal css
