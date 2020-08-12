@@ -178,6 +178,15 @@ function App() {
                 https://github.com/RilDev/minimal-css
               </a>
             </div>
+            <div className={`left`}>
+              NPM Package:{' '}
+              <a
+                href={`https://github.com/RilDev/minimal-css/packages/349510`}
+                target={`_blank`}
+              >
+                https://github.com/RilDev/minimal-css/packages/349510
+              </a>
+            </div>
           </div>
         </div>
       </div>
