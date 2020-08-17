@@ -4,7 +4,7 @@ import GitHubSVG from './assets/github.svg';
 import LinkedInSVG from './assets/linkedin.svg';
 import ResumeSVG from './assets/resume.svg';
 import ResumePDF from './assets/resume.pdf';
-import StylizeImg from './assets/stylize.png';
+import StylizedImg from './assets/stylized.png';
 import styled from 'styled-components';
 
 const AppWrapper = styled.div`
@@ -147,13 +147,13 @@ function App() {
       <h2 className={`title`}>Portfolio</h2>
       <div className={`portfolio`}>
         <div className={`item`}>
-          <div className={`title left`}>Stylize</div>
+          <div className={`title left`}>Stylized</div>
           <a
-            href={`https://rildev.github.io/stylize/`}
+            href={`https://rildev.github.io/stylized/`}
             target={`_blank`}
             className={`image`}
           >
-            <img src={StylizeImg} alt={``} />
+            <img src={StylizedImg} alt={``} />
           </a>
           <div className={`description`}>
             <div className={`subtitle`}>
@@ -161,29 +161,23 @@ function App() {
             </div>
             <div className={`left`}>
               Website URL:{' '}
-              <a
-                href={`https://rildev.github.io/stylize/`}
-                target={`_blank`}
-              >
-                https://rildev.github.io/stylize/
+              <a href={`https://rildev.github.io/stylized/`} target={`_blank`}>
+                https://rildev.github.io/stylized/
               </a>
             </div>
             <div className={`left`}>
               GitHub:{' '}
-              <a
-                href={`https://github.com/RilDev/stylize`}
-                target={`_blank`}
-              >
-                https://github.com/RilDev/stylize
+              <a href={`https://github.com/RilDev/stylized`} target={`_blank`}>
+                https://github.com/RilDev/stylized
               </a>
             </div>
             <div className={`left`}>
               NPM Package:{' '}
               <a
-                href={`https://github.com/RilDev/stylize/packages/360486`}
+                href={`https://github.com/RilDev/stylized/packages/361151`}
                 target={`_blank`}
               >
-                https://github.com/RilDev/stylize/packages/360486
+                https://github.com/RilDev/stylized/packages/361151
               </a>
             </div>
           </div>
