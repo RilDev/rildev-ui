@@ -4,7 +4,7 @@ import GitHubSVG from './assets/github.svg';
 import LinkedInSVG from './assets/linkedin.svg';
 import ResumeSVG from './assets/resume.svg';
 import ResumePDF from './assets/resume.pdf';
-import MinimalCSS from './assets/minimal-css-cropped.png';
+import StylizeImg from './assets/stylize.png';
 import styled from 'styled-components';
 
 const AppWrapper = styled.div`
@@ -147,44 +147,43 @@ function App() {
       <h2 className={`title`}>Portfolio</h2>
       <div className={`portfolio`}>
         <div className={`item`}>
-          <div className={`title left`}>Minimal CSS</div>
+          <div className={`title left`}>Stylize</div>
           <a
-            href={`https://rildev.github.io/minimal-css/`}
+            href={`https://rildev.github.io/stylize/`}
             target={`_blank`}
             className={`image`}
           >
-            <img src={MinimalCSS} alt={``} />
+            <img src={StylizeImg} alt={``} />
           </a>
           <div className={`description`}>
             <div className={`subtitle`}>
-              Make your prototypes look good with a standard minimal css
-              stylesheet!
+              Make your prototypes look good with a stylish stylesheet!
             </div>
             <div className={`left`}>
               Website URL:{' '}
               <a
-                href={`https://rildev.github.io/minimal-css/`}
+                href={`https://rildev.github.io/stylize/`}
                 target={`_blank`}
               >
-                https://rildev.github.io/minimal-css/
+                https://rildev.github.io/stylize/
               </a>
             </div>
             <div className={`left`}>
               GitHub:{' '}
               <a
-                href={`https://github.com/RilDev/minimal-css`}
+                href={`https://github.com/RilDev/stylize`}
                 target={`_blank`}
               >
-                https://github.com/RilDev/minimal-css
+                https://github.com/RilDev/stylize
               </a>
             </div>
             <div className={`left`}>
               NPM Package:{' '}
               <a
-                href={`https://github.com/RilDev/minimal-css/packages/349510`}
+                href={`https://github.com/RilDev/stylize/packages/360486`}
                 target={`_blank`}
               >
-                https://github.com/RilDev/minimal-css/packages/349510
+                https://github.com/RilDev/stylize/packages/360486
               </a>
             </div>
           </div>
