@@ -161,7 +161,7 @@ function App() {
               Make your prototypes look good with a stylish stylesheet!
             </div>
             <div className={`left`}>
-              Stack: CSS3, HTML5, JavaScript (ES6)
+              Stack: CSS3, HTML5, JavaScript (ES6), Responsive
             </div>
             <div className={`left`}>
               Website URL:{' '}
@@ -200,7 +200,7 @@ function App() {
               Heaven or Hell, where will you spend eternity?
             </div>
             <div className={`left`}>
-              Stack: GatsbyJS, ReactJS, JSX, CSS3, Multilingual
+              Stack: GatsbyJS, ReactJS, JSX, CSS3, Multilingual, Responsive
             </div>
             <div className={`left`}>
               Website URL:{' '}
