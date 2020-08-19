@@ -1,17 +1,34 @@
 # RilDev UI
 
-*This is the UI code for my developer website*
+_This is the UI code for my developer website_
 
 Website URL: [https://rildev.website](https://rildev.website)
 
 ## Portfolio
 
-### Minimal CSS
+### Stylized
 
-*Make your prototypes look good with a standard minimal css stylesheet!*
+_Make your prototypes look good with a stylish stylesheet!_
 
-Website URL: [https://rildev.github.io/minimal-css/](https://rildev.github.io/minimal-css/)
+Stack: CSS3, HTML5, JavaScript (ES6)
 
-GitHub: [https://github.com/RilDev/minimal-css](https://github.com/RilDev/minimal-css)
+Website URL: [https://rildev.github.io/stylized/](https://rildev.github.io/stylized/)
 
-NPM Package: [https://github.com/RilDev/minimal-css/packages/349510](https://github.com/RilDev/minimal-css/packages/349510)
+GitHub: [https://github.com/RilDev/stylized](https://github.com/RilDev/stylized)
+
+NPM Package: [https://github.com/RilDev/stylized/packages/361151](https://github.com/RilDev/stylized/packages/361151)
+
+### Code for Faith
+
+_Make your prototypes look good with a standard minimal css stylesheet!_
+
+Stack: GatsbyJS, ReactJS, JSX, CSS3, Multilingual
+
+Website URL: [https://codeforfaith.com](https://codeforfaith.com)
+
+GitHub: [https://github.com/RilDev/code-for-faith-ui](https://github.com/RilDev/code-for-faith-ui)
+
+## Todo
+
+- [ ] split code into separate components
+- [ ] update favicon with all sizes
