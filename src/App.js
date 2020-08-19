@@ -5,6 +5,7 @@ import LinkedInSVG from './assets/linkedin.svg';
 import ResumeSVG from './assets/resume.svg';
 import ResumePDF from './assets/resume.pdf';
 import StylizedImg from './assets/stylized.png';
+import CodeForFaithImg from './assets/code-for-faith.png';
 import styled from 'styled-components';
 
 const AppWrapper = styled.div`
@@ -160,6 +161,9 @@ function App() {
               Make your prototypes look good with a stylish stylesheet!
             </div>
             <div className={`left`}>
+              Stack: CSS3, HTML5, JavaScript (ES6)
+            </div>
+            <div className={`left`}>
               Website URL:{' '}
               <a href={`https://rildev.github.io/stylized/`} target={`_blank`}>
                 https://rildev.github.io/stylized/
@@ -178,6 +182,36 @@ function App() {
                 target={`_blank`}
               >
                 https://github.com/RilDev/stylized/packages/361151
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className={`item`}>
+          <div className={`title left`}>Code for Faith</div>
+          <a
+            href={`https://codeforfaith.com`}
+            target={`_blank`}
+            className={`image`}
+          >
+            <img src={CodeForFaithImg} alt={``} />
+          </a>
+          <div className={`description`}>
+            <div className={`subtitle`}>
+              Heaven or Hell, where will you spend eternity?
+            </div>
+            <div className={`left`}>
+              Stack: GatsbyJS, ReactJS, JSX, CSS3, Multilingual
+            </div>
+            <div className={`left`}>
+              Website URL:{' '}
+              <a href={`https://codeforfaith.com`} target={`_blank`}>
+                https://codeforfaith.com
+              </a>
+            </div>
+            <div className={`left`}>
+              GitHub:{' '}
+              <a href={`https://github.com/RilDev/code-for-faith-ui`} target={`_blank`}>
+                https://github.com/RilDev/code-for-faith-ui
               </a>
             </div>
           </div>
