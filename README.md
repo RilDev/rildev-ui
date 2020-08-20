@@ -38,6 +38,16 @@ Website URL: [https://savedtogether.life](https://savedtogether.life)
 
 GitHub: [https://github.com/RilDev/saved-together-ui](https://github.com/RilDev/saved-together-ui)
 
+### MSG Codes
+
+_Type a message and generate a link. This link will be usable only once._
+
+Stack: ReactJS, DenoJs, JSX, CSS3, Responsive
+
+Website URL: 
+
+GitHub: [https://github.com/RilDev/msg-codes-ui](https://github.com/RilDev/msg-codes-ui)
+
 ### Imagizer
 
 _Resize, progessive encode and serve images on the fly_
