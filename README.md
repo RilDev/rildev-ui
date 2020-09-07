@@ -68,6 +68,26 @@ Website URL:
 
 GitHub: 
 
+### Wordency
+
+_Upload a text file & get its word frequency_
+
+Stack: 
+
+Website URL: 
+
+GitHub: 
+
+### Basic French
+
+_Like Basic English, but for learning French_
+
+Stack: 
+
+Website URL: 
+
+GitHub: 
+
 ## Todo
 
 - [ ] remake website layout
