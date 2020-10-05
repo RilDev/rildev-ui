@@ -92,7 +92,7 @@ GitHub:
 
 _Tinoti stands for Timed Notifications. Shows notifications with short messages and sound_
 
-Stack: 
+Stack: Python
 
 Website URL: 
 
@@ -119,7 +119,7 @@ _Your math mentor to practice mental calculation in the comfort of your terminal
 
 `mathor` start a series of 10 questions including additions, substractions, multiplications and divisions. At the end of the series, it gives your result and the time it took you to complete the test. It also show the correct answers where you got it wrong.
 
-Stack: 
+Stack: Python
 
 Website URL: 
 
@@ -133,6 +133,18 @@ Todo:
 - [ ] -q, --questions: default `10`. enter integer `n` to specify how many questions you want in the series.
 - [ ] -d, --difficulty: default `1`. enter integer `n` to chose the max length of the numbers you will be working with. ex: if you enter `3`, the numbers you will be prompt with will be from `1` to `3` digits. So `12 + 345` or `99 * 5`.
 - [ ] -h, --help: help menu. Show all options.
+
+### Gh-Packages
+
+_Like gh-pages, but to publish packages!_
+
+Add `"package": "gh-packages"` to your `package.json` file
+
+Run `npm run package` to publish a patch
+
+Run `VERSION=minor npm run package` to publish a minor update
+
+Run `VERSION=major npm run package` to publish a major update
 
 ## Todo
 
