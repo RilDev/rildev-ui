@@ -88,6 +88,32 @@ Website URL:
 
 GitHub: 
 
+### Tinoti
+
+_Tinoti stands for Timed Notifications. Shows notifications with short messages and sound_
+
+Stack: 
+
+Website URL: 
+
+GitHub: 
+
+Todo:
+
+- [ ] add notifications
+- [ ] list notifications
+- [ ] remove notification
+- [ ] timer
+- [ ] launch on computer boot
+
+Technical implementation:
+
+- Each notification has: id, time, text, priority
+- gi.Notify
+- sqlight
+- .bashrc or crontab to autostart on boot
+
+
 ## Todo
 
 - [ ] remake website layout
