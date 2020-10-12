@@ -146,6 +146,26 @@ Run `VERSION=minor npm run package` to publish a minor update
 
 Run `VERSION=major npm run package` to publish a major update
 
+## OGame Admin Panel
+
+_Well it's an OGame bot... that you can tinker to fit your needs!_
+
+Stack: Python
+
+Website URL:
+
+GitHub:
+
+Todo:
+
+- [ ] scrap realtime account information
+- [ ] study how to play a maximum efficency
+- [ ] implement "play style" options
+- [ ] manage user accounts
+- [ ] check OGame code of conduct to make it legal
+- [ ] automatically manage ressources on an 8 hours loop
+- [ ] plan for buildings, attacks, spying, new tecknologies...
+
 ## Todo
 
 - [ ] remake website layout
