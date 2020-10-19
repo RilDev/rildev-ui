@@ -146,7 +146,7 @@ Run `VERSION=minor npm run package` to publish a minor update
 
 Run `VERSION=major npm run package` to publish a major update
 
-## OGame Admin Panel
+### OGame Admin Panel
 
 _Well it's an OGame bot... that you can tinker to fit your needs!_
 
@@ -166,7 +166,91 @@ Todo:
 - [ ] automatically manage ressources on an 8 hours loop
 - [ ] plan for buildings, attacks, spying, new tecknologies...
 
-## Todo
+### Rot
+
+The Rote memorization CLI tool.
+
+I made this tool to make it easy to learn and review Bible verses.
+
+PS: Rot means red in German. And the words of the Lord Jesus Christ are in red in some Bibles.
+
+Stack: Python Click
+
+Website URL:
+
+GitHub:
+
+Todo:
+
+- [ ] add new card
+- [ ] add new decks
+- [ ] add start study
+- [ ] add edit card
+- [ ] add edit deck
+- [ ] add delete card
+- [ ] add delete deck
+- [ ] add copy card to other deck
+- [ ] add backup deck
+- [ ] add reset card progress
+- [ ] add reset deck progress
+- [ ] add list decks (show ids, names, card count, cards count to review)
+- [ ] add list cards in deck (show ids, front, exerpt back, days_before_review)
+
+Database structure:
+
+*cards:* 
+
+id, int auto-increament pk
+
+front, text not null
+
+back, text not null
+
+*decks:*
+
+id, int auto-increament pk
+
+name, text not null
+
+*deck_lists:* index for efficient search
+
+deck_id, int fk decks.id 
+
+card_id, int fk cards.id
+
+*card_reviews:*
+
+card_id, int fk cards.id
+
+last_seen, date year-month-day
+
+days_before_review, int default 0
+
+Review Logic:
+
+When card is created, set last_seen to `null` and days_before_review to `0`
+
+```
+// update the last seen variable
+last_seen = current_date
+
+if answer correctly:
+  // double the number of days before review, example 4 days will become 8 days
+  if days_before_review > 0:
+    days_before_review *= 2
+  else:
+    // if seen for the first time or answered it wrong the day before
+    days_before_review = 1
+else:
+  // when user forgets card, reset card progress
+  days_before_review = 0
+```
+
+all operations on cards and decks (start, update, delete...) are done using ids.
+
+all operations execpt update can take multiple ids at once.
+
+__## Todo
 
 - [ ] remake website layout
 - [ ] split code into separate components
