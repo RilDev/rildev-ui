@@ -195,6 +195,9 @@ Todo:
 - [ ] add reset deck progress
 - [ ] add list decks (show ids, names, card count, cards count to review)
 - [ ] add list cards in deck (show ids, front, exerpt back, days_before_review)
+- [ ] add text formating italic `_text_`
+- [ ] add text formating bold `__text__`
+- [ ] add text formating red `___text___`
 
 Database structure:
 
