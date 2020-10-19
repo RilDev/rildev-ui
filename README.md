@@ -253,7 +253,7 @@ all operations on cards and decks (start, update, delete...) are done using ids.
 
 all operations execpt update can take multiple ids at once.
 
-__## Todo
+## Todo
 
 - [ ] remake website layout
 - [ ] split code into separate components
