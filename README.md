@@ -199,37 +199,39 @@ Todo:
 - [ ] add text formating bold `__text__`
 - [ ] add text formating red `___text___`
 
-Database structure:
+**Database structure:**
 
 *cards:* 
 
+```
 id, int auto-increament pk
-
 front, text not null
-
 back, text not null
+```
 
 *decks:*
 
+```
 id, int auto-increament pk
-
 name, text not null
+```
 
 *deck_lists:* index for efficient search
 
+```
 deck_id, int fk decks.id 
-
 card_id, int fk cards.id
+```
 
 *card_reviews:*
 
+```
 card_id, int fk cards.id
-
 last_seen, date year-month-day
-
 days_before_review, int default 0
+```
 
-Review Logic:
+**Review Logic:**
 
 When card is created, set last_seen to `null` and days_before_review to `0`
 
@@ -252,6 +254,20 @@ else:
 all operations on cards and decks (start, update, delete...) are done using ids.
 
 all operations execpt update can take multiple ids at once.
+
+### Bro2Bro
+
+*Browser to browser chat. No server. No surveillance.*
+
+Stack: WebRTC, BugOut.js
+
+Website:
+
+GitHub:
+
+Todo:
+
+- [ ] create app with bugoutjs
 
 ## Todo
 
