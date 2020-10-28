@@ -72,11 +72,18 @@ GitHub:
 
 _Upload a text file & get its word frequency_
 
+Do a CLI tool and then make it a web service.
+
 Stack: 
 
 Website URL: 
 
 GitHub: 
+
+Todo:
+
+- every word's frequency
+- percentage of difference between two text files
 
 ### Basic French
 
@@ -147,6 +154,8 @@ Run `VERSION=minor npm run package` to publish a minor update
 Run `VERSION=major npm run package` to publish a major update
 
 ### OGame Admin Panel
+
+__Canceled because illigal according the the article 4.3 of the [Standard Terms and Conditions of Use](https://agbserver.gameforge.com/enGB-Terms-2014-OGame.html)__
 
 _Well it's an OGame bot... that you can tinker to fit your needs!_
 
@@ -268,6 +277,136 @@ GitHub:
 Todo:
 
 - [ ] create app with bugoutjs
+
+### Obot
+
+_A chess like game played by bots!_
+
+Obot is a chess like strategy game where players' bots are confronting each other. Of course, you could choose to play it manually, but it's not advised!
+
+The game: 2 players on a 9x9 grid. Each player starts with a king, if the king is taken, the player with a king left wins. Turns are simultanious (each player decides of a move and resolve it at the same time). Kings start on rank 2 file 5 and rank 7 file 5. King can ether move one square in any direction or spawn a pawn. Pawns move one square in any direction. All peaces move (or for the kings, spawn pawns) at the same time. Both players can see every peaces at all time. No check, no draw, no checkmate, players have to take the opponent's king to win the game. A peace takes another by moving on a square occupied by an enemy peace.
+
+Stack:
+
+Website:
+
+GitHub:
+
+Todo:
+
+- [ ] figure out the precise rules
+- [ ] figure out rules of bot making
+- [ ] do cli tool
+- [ ] setup website
+
+### Bible Projects
+
+Ideas to transcribe, translate and print Bibles.
+
+Publish those ideas on `conceptbible.org`
+
+#### Flowing Word Bible
+
+_A KJV Bible without chapter number, verse number or page number. Simply the pure flowing word of God._
+
+Stack:
+
+Website:
+
+GitHub:
+
+Todo:
+
+- [ ] get bible kjv csv
+- [ ] only keep the verses and book names
+- [ ] edit pdf format A5
+- [ ] manually add the _italic_ kjv words?
+
+#### Corrected Basic English Bible
+
+_The [Basic English Bible](https://www.biblestudytools.com/bbe/) corrected with the help of the KJV._
+
+Stack:
+
+Website:
+
+GitHub:
+
+Todo:
+
+- [ ] get basic english Bible csv
+- [ ] do a table of all the corrupted verses: verse, kjv, other translations
+- [ ] correct all [corrupted verses](http://www.paulbenson.me/bible-corruption.html)
+- [ ] edit pdf format A5
+
+#### Toki Pona Bible
+
+_The word of God in Toki Pona_
+
+AI generated translation of the Holy Bible based on the Corrected Basic English Bible.
+
+Stack:
+
+Website:
+
+GitHub:
+
+Todo:
+
+- [ ] Ask for the ML model from [ante toki](https://www.reddit.com/r/tokipona/comments/dzw30c/english_to_toki_pona_translation_with_neural/) or train one myself on [Tatoeba examples](https://tatoeba.org/eng/sentences/search?query=light&from=eng&to=toki).
+- [ ] make sure the translation is [correct toki pona](https://jan-lope.github.io/Toki_Pona_lessons_English/)
+- [ ] do a version with latin alphabet
+- [ ] do a version with sitelen pona script
+- [ ] do pdf A5
+
+#### DScript Bible
+
+_A KJV Bible using [DScript](http://dscript.org/)_
+
+Stack:
+
+Website:
+
+GitHub:
+
+Todo:
+
+- [ ] Find/Do a Dscript simple font (linear, no glyphs)
+- [ ] Parse all the text to modify the script (do chapters horizontal and verses vertical)
+- [ ] edit A5 pdf
+
+#### OST
+
+_Bring the word of God to the terminal in the french Ostervald version._
+
+Stack:
+
+Website:
+
+GitHub:
+
+Todo:
+
+- [ ] get Osterval version csv
+- [ ] parse the csv
+- [ ] update script to ignore accentuated letters
+
+#### Olivetan Bible
+
+_AI generated transcription of the [Olivetan Bible](https://gallica.bnf.fr/ark:/12148/bpt6k1040534s.r=olivetan?rk=21459;2)_
+
+Stack: [Transkribus](https://transkribus.eu/Transkribus/)
+
+Website:
+
+GitHub:
+
+Todo:
+
+- [ ] Train ML model starting with the book of Apocalypse to compare it to the printed version
+- [ ] Start with the New Testament
+- [ ] transcribe the Old Testament
+- [ ] publish it A5 pdf format
 
 ## Todo
 
